@@ -1,4 +1,4 @@
-package com.github.hcsp;
+package com.github.hcsp.controlflow;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
