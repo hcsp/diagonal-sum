@@ -1,5 +1,7 @@
 package com.github.hcsp.controlflow;
 
+import java.util.stream.IntStream;
+
 public class Main {
     public static void main(String[] args) {
         int[][] matrix = {{1, 2, 3}, {4, 5, 6}, {7, 8, 9}};
@@ -12,5 +14,7 @@ public class Main {
      * @param matrix 给定的二维数组
      * @return 对角线元素之和
      */
-    public static int diagonalSum(int[][] matrix) {}
+    public static int diagonalSum(int[][] matrix) {
+        return IntStream.rangeClosed(0, matrix.length - 1).map(x -> matrix[x][x]).sum();
+    }
 }
