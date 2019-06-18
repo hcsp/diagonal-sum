@@ -22,13 +22,8 @@ public class Main {
                 if (i == j) {
                     result1 = result1 + matrix[i][j];
                 }
-                //上右---下左
-
-                if ((i + j) == (len - 1)) {
-                    result2 = result2 +matrix[i][j];
-                }
             }
         }
-        return result1+result2;
+        return result1;
     }
 }
