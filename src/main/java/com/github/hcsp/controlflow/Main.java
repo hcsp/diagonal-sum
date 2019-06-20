@@ -22,7 +22,6 @@ public class Main {
                 }
             }
         }
-        result = result - matrix[(n - 1) / 2][(n - 1) / 2];
         return result;
     }
 }
