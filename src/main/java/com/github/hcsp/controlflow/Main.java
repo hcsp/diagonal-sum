@@ -15,7 +15,7 @@ public class Main {
     public static int diagonalSum(int[][] matrix) {
         //分析题目，整理思路：
         //第一步，需要知道二维数组的两个边界，a,b, 且，a 是等于 b的（题目给的就是方阵）
-        //第二步，然后依次取，matrix[a][a]的值，且累积到sum 中，即为题中所答
+        //第二步，然后依次取，matrix[a][a]的值，且累加到sum 中，即为题中所答
         int sum = 0;
 
         for (int i = 0; i < matrix.length; i++) {
