@@ -18,7 +18,5 @@ public class Main {
             res += matrix[i][i];
         }
         return res;
-
-
     }
 }
