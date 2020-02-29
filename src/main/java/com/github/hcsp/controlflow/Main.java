@@ -16,10 +16,15 @@ public class Main {
         if (matrix == null || matrix[0] == null || matrix.length == 0 || matrix[0].length == 0) {
             return 0;
         }
-        return process(matrix, 0, 0, matrix.length - 1, matrix[0].length - 1);
+        /*return process(matrix, 0, 0, matrix.length - 1, matrix[0].length - 1);*/
+        int res = 0;
+        for (int i = 0; i < matrix.length; i++) {
+            res += matrix[i][i];
+        }
+        return res;
     }
 
-    public static int process(int[][] matrix, int leftTopRow, int leftTopColumn, int rightBottomRow, int rightBottomColumn) {
+    /*public static int process(int[][] matrix, int leftTopRow, int leftTopColumn, int rightBottomRow, int rightBottomColumn) {
         int res = 0;
         if (leftTopRow == rightBottomRow) {
             res = matrix[leftTopRow][leftTopColumn];
@@ -35,5 +40,5 @@ public class Main {
             res += process(matrix, ++leftTopRow, ++leftTopColumn, --rightBottomRow, --rightBottomColumn);
         }
         return res;
-    }
+    }*/
 }
