@@ -20,7 +20,8 @@ public class Main {
         int res = 0;
         if (leftTopRow == rightBottomRow) {
             res = matrix[leftTopRow][leftTopColumn];
-        } else {
+        }
+        if(leftTopRow < rightBottomRow) {
             res = matrix[leftTopRow][leftTopColumn] +
                     matrix[leftTopRow][rightBottomColumn] +
                     matrix[rightBottomRow][leftTopColumn] +
