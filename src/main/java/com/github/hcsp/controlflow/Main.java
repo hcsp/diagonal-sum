@@ -13,6 +13,9 @@ public class Main {
      * @return 对角线元素之和
      */
     public static int diagonalSum(int[][] matrix) {
+        if (matrix == null || matrix[0] == null || matrix.length == 0 || matrix[0].length == 0) {
+            return 0;
+        }
         return process(matrix, 0, 0, matrix.length - 1, matrix[0].length - 1);
     }
 
@@ -21,7 +24,7 @@ public class Main {
         if (leftTopRow == rightBottomRow) {
             res = matrix[leftTopRow][leftTopColumn];
         }
-        if(leftTopRow < rightBottomRow) {
+        if (leftTopRow < rightBottomRow) {
             res = matrix[leftTopRow][leftTopColumn] +
                     matrix[leftTopRow][rightBottomColumn] +
                     matrix[rightBottomRow][leftTopColumn] +
