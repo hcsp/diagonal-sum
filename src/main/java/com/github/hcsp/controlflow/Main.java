@@ -14,8 +14,12 @@ public class Main {
      */
     public static int diagonalSum(int[][] matrix) {
         int i = 0;
-        for(int j = 0; j < matrix.length; i++){
-            i += matrix[j][j];
+        for(int j = 0; j < matrix[0].length; i++) {
+            for (int k = 0; k < matrix.length; k++) {
+                if (k == j) {
+                    i += matrix[j][k];
+                }
+            }
         }
         return i;
     }
