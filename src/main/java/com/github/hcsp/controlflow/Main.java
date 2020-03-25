@@ -13,12 +13,12 @@ public class Main {
      * @return 对角线元素之和
      */
     public static int diagonalSum(int[][] matrix) {
-         int count = 0;
-        for (int i = 0; i < matrix.length ; i++) {
-            for (int j = 0; j < matrix[i].length ; j++) {
-               if(i == j){
-                   count += matrix[i][j];
-               }
+        int count = 0;
+        for (int i = 0; i < matrix.length; i++) {
+            for (int j = 0; j < matrix[i].length; j++) {
+                if (i == j) {
+                    count += matrix[i][j];
+                }
             }
         }
         return count;
