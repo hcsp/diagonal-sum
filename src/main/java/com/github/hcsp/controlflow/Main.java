@@ -1,7 +1,5 @@
 package com.github.hcsp.controlflow;
 
-import java.util.concurrent.ForkJoinPool;
-
 public class Main {
     public static void main(String[] args) {
         int[][] matrix = {{1, 2, 3}, {4, 5, 6}, {7, 8, 9}};
@@ -14,16 +12,5 @@ public class Main {
      * @param matrix 给定的二维数组
      * @return 对角线元素之和
      */
-    public static int diagonalSum(int[][] matrix) {
-        int len = matrix.length;
-        int sum = 0;
-        for (int i = 0; i < len; i++) {
-            for (int j = 0; j < len; j++) {
-                if (i == j) {
-                    sum += matrix[i][j];
-                }
-            }
-        }
-        return sum;
-    }
+    public static int diagonalSum(int[][] matrix) {}
 }
