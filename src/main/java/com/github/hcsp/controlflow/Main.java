@@ -13,8 +13,10 @@ public class Main {
      * @return 对角线元素之和
      */
     public static int diagonalSum(int[][] matrix) {
-        int start = matrix[0][0];
-        int end = matrix[matrix.length - 1][matrix[matrix.length - 1].length - 1];
-        return start + end;
+        int key = 0;
+        for (int i = 0; i < matrix.length; i++) {
+            key += matrix[i][i];
+        }
+        return key;
     }
 }
