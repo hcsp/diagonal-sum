@@ -13,6 +13,6 @@ public class Main {
      * @return 对角线元素之和
      */
     public static int diagonalSum(int[][] matrix) {
-        return matrix[0][0]+matrix[1][1]+matrix[2][2];
+        return matrix[0][0] + matrix[1][1] + matrix[2][2];
     }
 }
