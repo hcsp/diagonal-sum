@@ -1,5 +1,4 @@
 package com.github.hcsp.controlflow;
-
 public class Main {
     public static void main(String[] args) {
         int[][] matrix = {{1, 2, 3}, {4, 5, 6}, {7, 8, 9}};
@@ -12,5 +11,11 @@ public class Main {
      * @param matrix 给定的二维数组
      * @return 对角线元素之和
      */
-    public static int diagonalSum(int[][] matrix) {}
+    public static int diagonalSum(int[][] matrix) {
+        int c=0;
+        for (int i=0;i<matrix.length;i++){
+            c+=matrix[i][i];
+        }
+        return c;
+    }
 }
