@@ -12,13 +12,5 @@ public class Main {
      * @param matrix 给定的二维数组
      * @return 对角线元素之和
      */
-       public static int diagonalSum(int[][] matrix) {
-        int[][] ch = matrix;
-        int s = 0;
-        for (int i = 0; i < ch.length; i++) {
-            s = s + ch[i][i];
-
-        }
-        return s;
-    }
+    public static int diagonalSum(int[][] matrix) {}
 }
