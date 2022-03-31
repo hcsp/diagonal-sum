@@ -17,6 +17,7 @@ public class Main {
         for (int i = 0; i < matrix.length; i++) {
             k = k + matrix[i][i];
 
+
         }
         return k;
     }
